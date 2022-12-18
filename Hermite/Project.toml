@@ -1,0 +1,4 @@
+name = "Hermite"
+uuid = "25bbfa89-60e7-4ffa-9e56-d27bbc583bac"
+authors = ["sh <syuya2036@gmail.com>"]
+version = "0.1.0"
