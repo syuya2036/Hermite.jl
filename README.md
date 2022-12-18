@@ -1,28 +1,8 @@
 # Hermite.jl
 
 - [Hermite.jl](#hermitejl)
-  - [Loading this packages](#loading-this-packages)
   - [Calculus](#calculus)
     - [Differential](#differential)
-
-## Loading this packages
-
-1.Type ***julia*** on the terminal to start the **REPL**.
-
-2.***]*** to enter Pkg mode and add ***JJcalc***.
-
-```Terminal
-terminal> cd ./JJcalc
-terminal> julia
-julia> ]
-pkg> activate . 
-```
-
-3.You can use ***JJcalc*** with the following command.
-
-```Julia
-using JJcalc
-```
 
 ## Calculus
 
