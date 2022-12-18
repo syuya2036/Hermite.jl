@@ -1,22 +1,7 @@
-mutable struct Jfunction
-    f ::Function
-    nargs ::Integer
-    function Jfunction(f ::Function, nargs ::Integer)
-        self = new()
-        tpl = tuple(ones(nargs)...)
-        try
-            f(tpl...)
-            self.f = f
-            self.nargs = nargs
-            return self
-        catch
-            println("On Jfunction: Number of arguments do not match.")
-        end
-    end
+function dif(f::Function,h=1.0e-5,loss_ord_dim=2::Int)
+    return x->(8(f(x+h)-f(x-h)) - (f(x+2h)-f(x-2h)))/12h
 end
 
-
-
-f = Jfunction((x,y) -> x + y, 2)
-println(f.f(1,1))
-println(f.nargs)
+g(x) = 2^x
+f′(x) = dif(g)(x)
+println(Float32(f′(1)))
