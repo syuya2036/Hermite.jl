@@ -36,7 +36,7 @@ I = intgrl(f,a,b)
 To reduce the width of the microinterval and increase accuracy, use
 
 ```Julia
-I = intgrl(f,a,b,1.0e4)
+I = intgrl(f,a,b,1.0e-4)
 ```
 
 ### Differential Equation
